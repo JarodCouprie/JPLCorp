@@ -1,0 +1,144 @@
+html{
+    font-size: 10px;
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+    --primary-color: #155080;
+    --light-color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Imports des polices */
+@font-face {
+    font-family: "Kaushan";
+    src: url(/assets/fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: "UnicaOne";
+    src: url(/assets/fonts/UnicaOne-Regular.ttf);
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    background-size: cover;
+    height: 100vh;
+}
+
+/* =============================== Style de la barre de navigation =============================== */
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+.navbar{
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--primary-color);
+}
+
+.nav-icon-container{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Kaushan";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: var(--light-color);
+}
+
+.nav-icon-container img{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-link-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link{
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--light-color);
+}
+
+.nav-link:hover{
+    background: var(--light-color);
+    color: #151616;
+}
+
+.mode-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.mode{
+    width: 150px;
+    height: 50px;
+    justify-content: space-between;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.mode-text{
+    font-size: 2rem;
+}
+
+.active{
+    background: var(--light-color);
+    color: #151616;
+}
+
+/* ======== Light mode and Dark mode ======== */
+
+.light-mode{
+    --background-color: #ffffff;
+    --text-color: #151616;
+}
+
+.dark-mode{
+    --background-color: #151616;
+    --text-color: #ffffff;
+}
+
+/* .light-mode-button{
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.dark-mode-button{
+    border: 1px solid var(--background-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+} */
+
+/* ======== Light mode and Dark mode ======== */
+
+/* =============================== Style de la barre de navigation =============================== */
+
