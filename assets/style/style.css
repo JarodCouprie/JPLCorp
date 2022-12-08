@@ -99,11 +99,18 @@ body{
 }
 
 .mode{
-    width: 150px;
+    width: 160px;
     height: 50px;
     justify-content: space-between;
     color: #ffffff;
     cursor: pointer;
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.mode:hover{
+    background-color: #151616;
+    color: var(--light-color);
 }
 
 .mode-text{
