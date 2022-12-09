@@ -3,7 +3,7 @@ html{
     text-rendering: optimizeLegibility;
     font-synthesis: none;
     --primary-color: #155080;
-    --light-color: #fff;
+    --light-color: #f1f1f1;
 }
 
 *{
@@ -40,7 +40,7 @@ body{
 }
 
 .navbar{
-    padding: 10px 30px;
+    padding: 10px 0px 10px 30px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -92,28 +92,28 @@ body{
     color: #151616;
 }
 
-.mode-img{
+.theme-img{
     width: 25px;
     height: 25px;
     border-radius: 50%;
 }
 
-.mode{
-    width: 160px;
+.theme{
+    width: 170px;
     height: 50px;
     justify-content: space-between;
-    color: #ffffff;
+    color: #f1f1f1;
     cursor: pointer;
     color: var(--primary-color);
     transition: all 0.3s ease-in-out;
 }
 
-.mode:hover{
+.theme:hover{
     background-color: #151616;
     color: var(--light-color);
 }
 
-.mode-text{
+.theme-text{
     font-size: 2rem;
 }
 
@@ -122,30 +122,19 @@ body{
     color: #151616;
 }
 
-/* ======== Light mode and Dark mode ======== */
+/* ======== Light theme and Dark theme ======== */
 
-.light-mode{
-    --background-color: #ffffff;
+.light-theme{
+    --background-color: #f1f1f1;
     --text-color: #151616;
 }
 
-.dark-mode{
+.dark-theme{
     --background-color: #151616;
-    --text-color: #ffffff;
+    --text-color: #f1f1f1;
 }
 
-/* .light-mode-button{
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
-}
-
-.dark-mode-button{
-    border: 1px solid var(--background-color);
-    background-color: var(--background-color);
-    color: var(--text-color);
-} */
-
-/* ======== Light mode and Dark mode ======== */
+/* ======== Light theme and Dark theme ======== */
 
 /* =============================== Style de la barre de navigation =============================== */
 

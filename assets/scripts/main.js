@@ -1,28 +1,27 @@
 //Imports si besoin
 
-
 //Page d'accueil
 
-//Nav-bar function
+//Light theme - Dark theme
 
-let modeImg = document.querySelector(".mode-img");
-let modeText = document.querySelector(".mode-text");
+const themeImg = document.querySelector(".theme-img");
+const themeText = document.querySelector(".theme-text");
+const body = document.querySelector("body");
 
-document.querySelector(".mode").onclick = function() {
-    if (modeText.innerText === "Dark Theme") {
-        modeText.innerText = "Light Theme";
-        modeImg.src = "./assets/logo/sun-white.png";
-        this.classList.toggle("dark-mode-button");
-        this.classList.toggle("light-mode-button");
+let isLight = true;
+
+document.querySelector(".theme").onclick = function() {
+    isLight = !isLight;
+    if (isLight) {
+        themeText.innerText = "Go light theme";
+        themeImg.src = "./assets/logo/sun-white.png";
+        body.classList.replace("dark-theme", "light-theme");
     }
     else {
-        modeText.innerText = "Dark Theme";
-        modeImg.src = "./assets/logo/moon-white.png";
-        this.classList.toggle("light-mode-button");
-        this.classList.toggle("dark-mode-button");
+        themeText.innerText = "Go dark theme";
+        themeImg.src = "./assets/logo/moon-white.png";
+        body.classList.replace("light-theme", "dark-theme");
     }
- 
-    document.querySelector("body").classList.toggle("dark-mode");
-    document.querySelector("body").classList.toggle("light-mode");
 }
+
 
